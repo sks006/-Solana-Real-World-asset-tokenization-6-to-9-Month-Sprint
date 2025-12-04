@@ -1,0 +1,1 @@
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/4_12_2025/Struct_builder/target/debug/Struct_builder: /media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/4_12_2025/Struct_builder/src/main.rs
