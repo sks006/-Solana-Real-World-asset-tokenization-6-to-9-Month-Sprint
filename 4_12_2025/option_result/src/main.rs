@@ -439,25 +439,216 @@
 
 //----------------------------- 7 ----------------------------------
 
-#[derive(Debug,Clone)]
-struct AccountCollateral{
-    pub usd_value:u64,
-}
+// #[derive(Debug,Clone)]
+// struct AccountCollateral{
+//     pub usd_value:u64,
+// }
 
+// fn main(){
+//     let collateral_record_a:Option <AccountCollateral> = Some(
+//         AccountCollateral{
+//             usd_value:1_000_000,
+//         }
+//     );
+//     let collateral_record_b:Option <AccountCollateral> =None;
+
+//     let value_a:Option<u64> = collateral_record_a.map(|record|{
+//         record.usd_value
+//     });
+//     let value_b:Option<u64> = collateral_record_b.map(|record|{
+//         record.usd_value
+//     });
+//     println!("A result : {:?}",value_a);
+//     println!("B result : {:?}",value_b);
+// }
+//----------------------------- 8 ----------------------------------
+
+// #[derive(Clone,Debug)]
+
+// struct AccountCollateral{
+//     pub usd_value:u64,
+// }
+
+// fn main(){
+//     let collateral_record_a:Option<AccountCollateral>=Some(
+//         AccountCollateral{
+//             usd_value:1_000_000,
+//         }
+//     );
+//     let collateral_record_b:Option<AccountCollateral>= None;
+
+//     let value_a:Option<u64>=collateral_record_a.map(|record|{
+//         record.usd_value
+//     });
+//     let value_b:Option<u64>=collateral_record_b.map(|record|{
+//         record.usd_value
+//     });
+//     println!("A result {:?}",value_a);
+//     println!("B result {:?}",value_b);
+// }
+
+//----------------------------- 9 ----------------------------------
+
+// #[derive(Debug,Clone)]
+// struct AccountCollateral{
+//     pub usd_value:u64,
+// }
+// fn main(){
+//     let collateral_record_a:Option<AccountCollateral>=Some(
+//         AccountCollateral{
+//             usd_value:1000008888
+//         }
+//     );
+//     let collateral_record_b:Option<AccountCollateral>=None;
+
+//     let value_a:Option<u64>=collateral_record_a.map(|record|{
+//         record.usd_value
+//     });
+//     let value_b:Option<u64>=collateral_record_b.map(|record|{
+//         record.usd_value
+//     });
+//     println!("A result {:?}",value_a);
+//     println!("B result {:?}",value_b);
+
+// }
+
+//----------------------------- 10 ----------------------------------
+
+// #[derive(Clone,Debug)]
+// struct AccountCollateral{
+//     pub usd_value:u64,
+// }
+
+// fn main(){
+//     let collateral_record_a:Option<AccountCollateral>=Some(
+//         AccountCollateral{
+//             usd_value:1000000003123
+//         }
+//     );
+//     let collateral_record_b:Option<AccountCollateral>=None;
+//     let value_a:Option <u64> = collateral_record_a.map(|record|{
+//         record.usd_value
+//     });
+//     let value_b:Option <u64> =collateral_record_b.map(|record|{
+//         record.usd_value
+//     });
+//     println!("A result {:?}",value_a);
+//     println!("B result {:?}",value_b)
+// }
+
+//----------------------------- 11 ----------------------------------
+
+// #[derive(Debug,Clone)]
+// struct AccountCollateral{
+//     pub usd_value:u64,
+// }
+// fn main(){
+//     let collateral_record_a:Option<AccountCollateral>=Some(
+//         AccountCollateral{
+//             usd_value:3482983438
+//         }
+//     );
+//     let collateral_record_b:Option<AccountCollateral>=None;
+//     let value_a:Option<u64>=collateral_record_a.map(|record|{
+//         record.usd_value
+//     });
+//     let value_b:Option<u64>= collateral_record_b.map(|record|{
+//         record.usd_value
+//     });
+//     println!("A result {:?}",value_a);
+//     println!("B result {:?}",value_b);
+// }
+//----------------------------- 12 ----------------------------------
+
+// #[derive(Debug,Clone)]
+
+// struct AccountCollateral{
+//     pub usd_value:u64,
+// }
+// fn main(){
+//     let collateral_record_a:Option<AccountCollateral>=Some(
+//         AccountCollateral{
+//             usd_value:400000000
+//         }
+//     );
+//     let collateral_record_b:Option<AccountCollateral> =None;
+
+//     let value_a:Option<u64>=collateral_record_a.map(|record|{
+//         record.usd_value
+//     });
+//       let value_b:Option<u64>=collateral_record_b.map(|record|{
+//         record.usd_value
+//     });
+//         println!("A result {:?}",value_a);
+//     println!("B result {:?}",value_b);
+// }
+//----------------------------- 13 ----------------------------------
+//  #[derive(Debug,Clone)]
+//  struct AccountCollateral{
+//     pub usd_value:u64,
+//  }
+
+//  fn main(){
+//     let collateral_record_a:Option<AccountCollateral>=Some(
+//         AccountCollateral{
+//             usd_value:400003030
+//         }
+//     );
+//     let collateral_record_b:Option<AccountCollateral>=None;
+//     let value_a:Option<u64>=collateral_record_a.map(|record|{
+//         record.usd_value
+//     });
+//      let value_b:Option<u64>=collateral_record_b.map(|record|{
+//         record.usd_value
+//     });
+//       println!("A result {:?}",value_a);
+//       println!("B result {:?}",value_b);
+//  }
+//----------------------------- 14 ----------------------------------
+
+// #[derive(Debug,Clone)]
+
+// struct AccountCollateral{
+//     usd_value:u64,
+// }
+
+// fn main(){
+//     let collateral_record_a:Option<AccountCollateral>=Some(
+//         AccountCollateral{
+//             usd_value:56789000
+//         }
+//     );
+//     let collateral_record_b:Option<AccountCollateral>=None;
+//     let value_a:Option<u64>=collateral_record_a.map(|record|{
+//         record.usd_value
+//     });
+//      let value_b:Option<u64>=collateral_record_b.map(|record|{
+//         record.usd_value
+//     });
+//       println!("A result {:?}",value_a);
+//       println!("B result {:?}",value_b);
+// }
+
+//----------------------------- 15 ----------------------------------
+
+#[derive(Debug,Clone)]
+
+struct AccountCollateral{
+    usd_value:String,
+}
 fn main(){
-    let collateral_record_a:Option <AccountCollateral> = Some(
+    let collateral_record_a:Option<AccountCollateral>=Some(
         AccountCollateral{
-            usd_value:1_000_000,
+            usd_value:"56789000".to_string()
         }
     );
-    let collateral_record_b:Option <AccountCollateral> =None;
-
-    let value_a:Option<u64> = collateral_record_a.map(|record|{
+    let collateral_record_b:Option<AccountCollateral>=None;
+    let value_a:Option<String>=collateral_record_a.map(|record|{
         record.usd_value
     });
-    let value_b:Option<u64> = collateral_record_b.map(|record|{
+     let value_b:Option<String>=collateral_record_b.map(|record|{
         record.usd_value
     });
-    println!("A result : {:?}",value_a);
-    println!("B result : {:?}",value_b);
+      println!("A result {:?}",value_a);
+      println!("B result {:?}",value_b);
 }
