@@ -1,0 +1,1 @@
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/9_12_2025/ownership_borrowing/target/debug/ownership_borrowing: /media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/9_12_2025/ownership_borrowing/src/main.rs
