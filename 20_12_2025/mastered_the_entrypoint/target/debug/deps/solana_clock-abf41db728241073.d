@@ -1,0 +1,8 @@
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/deps/solana_clock-abf41db728241073.d: /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/solana-clock-2.2.2/src/lib.rs /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/solana-clock-2.2.2/src/sysvar.rs
+
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/deps/libsolana_clock-abf41db728241073.rlib: /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/solana-clock-2.2.2/src/lib.rs /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/solana-clock-2.2.2/src/sysvar.rs
+
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/deps/libsolana_clock-abf41db728241073.rmeta: /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/solana-clock-2.2.2/src/lib.rs /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/solana-clock-2.2.2/src/sysvar.rs
+
+/home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/solana-clock-2.2.2/src/lib.rs:
+/home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/solana-clock-2.2.2/src/sysvar.rs:

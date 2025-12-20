@@ -1,0 +1,11 @@
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/deps/five8-1a7e4ad3c2b8ea3a.d: /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/lib.rs /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/decode.rs /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/encode.rs /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/unlikely.rs /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/../README.md
+
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/deps/libfive8-1a7e4ad3c2b8ea3a.rlib: /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/lib.rs /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/decode.rs /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/encode.rs /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/unlikely.rs /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/../README.md
+
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/deps/libfive8-1a7e4ad3c2b8ea3a.rmeta: /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/lib.rs /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/decode.rs /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/encode.rs /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/unlikely.rs /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/../README.md
+
+/home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/lib.rs:
+/home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/decode.rs:
+/home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/encode.rs:
+/home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/unlikely.rs:
+/home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/five8-0.2.1/src/../README.md:

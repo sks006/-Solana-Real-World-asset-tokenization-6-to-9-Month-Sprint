@@ -1,0 +1,11 @@
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/deps/libsecp256k1-e4936cb27232a058.d: /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libsecp256k1-0.6.0/src/lib.rs /media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/build/libsecp256k1-73ae5f8adefbf507/out/const.rs /media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/build/libsecp256k1-73ae5f8adefbf507/out/const_gen.rs
+
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/deps/liblibsecp256k1-e4936cb27232a058.rlib: /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libsecp256k1-0.6.0/src/lib.rs /media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/build/libsecp256k1-73ae5f8adefbf507/out/const.rs /media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/build/libsecp256k1-73ae5f8adefbf507/out/const_gen.rs
+
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/deps/liblibsecp256k1-e4936cb27232a058.rmeta: /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libsecp256k1-0.6.0/src/lib.rs /media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/build/libsecp256k1-73ae5f8adefbf507/out/const.rs /media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/build/libsecp256k1-73ae5f8adefbf507/out/const_gen.rs
+
+/home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libsecp256k1-0.6.0/src/lib.rs:
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/build/libsecp256k1-73ae5f8adefbf507/out/const.rs:
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/build/libsecp256k1-73ae5f8adefbf507/out/const_gen.rs:
+
+# env-dep:OUT_DIR=/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/build/libsecp256k1-73ae5f8adefbf507/out

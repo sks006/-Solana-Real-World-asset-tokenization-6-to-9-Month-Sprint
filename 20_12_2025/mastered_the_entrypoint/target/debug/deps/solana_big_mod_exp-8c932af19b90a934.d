@@ -1,0 +1,7 @@
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/deps/solana_big_mod_exp-8c932af19b90a934.d: /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/solana-big-mod-exp-2.2.1/src/lib.rs
+
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/deps/libsolana_big_mod_exp-8c932af19b90a934.rlib: /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/solana-big-mod-exp-2.2.1/src/lib.rs
+
+/media/seam/A/Rust_Solana/Prectice_project/Rust_prectice/20_12_2025/mastered_the_entrypoint/target/debug/deps/libsolana_big_mod_exp-8c932af19b90a934.rmeta: /home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/solana-big-mod-exp-2.2.1/src/lib.rs
+
+/home/seam/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/solana-big-mod-exp-2.2.1/src/lib.rs:
