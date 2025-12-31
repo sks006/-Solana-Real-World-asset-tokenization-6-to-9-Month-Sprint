@@ -188,9 +188,7 @@
 //     Ok(())
 // }
 //------------------------15------------------------------------------------
-// use anchor_lang::prelude::*;
-// use crate::state::*;
-// use crate::error::ErrorCode; // Ensure this import is here
+
 // #[derive(Accounts)]
 // pub struct DepositCollateral<info>{
 //     #[account](
@@ -277,7 +275,10 @@ pub struct DepositCollateral<info>{
         seeds=[b"vault",user.key().as_ref()],
         bump
     )
-    pub vault_account:Account<info,System>
+    
+       pub vault_account:Account<info,UserVault>,
+    #[account(mut)]
+    pub user:system_program:program<info,System>
 }
 pub fn handle(ctx:Context<DepositCollateral>,account:u64)->Result<()>{
     let vault=&mut ctx.accounts.vault_account;
