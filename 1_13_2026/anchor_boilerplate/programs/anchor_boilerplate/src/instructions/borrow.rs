@@ -1,6 +1,5 @@
 use anchor_lang::prelude::*;
-use anchor_spl::token::{self, Token, TokenAccount, Mint, Transfer};
-use crate::state::UserObligation;
+use anchor_spl::token::{ self, Token, TokenAccount, Mint, Transfer };
 
 #[derive(Accounts)]
 pub struct Borrow<'info> {
@@ -16,19 +15,16 @@ pub struct Borrow<'info> {
 
     #[account(
         mut,
-        seeds = [b"pool_vault", mint.key().as_ref()],  // ADD mint key here too
+        seeds = [b"pool_vault", mint.key().as_ref()],
         bump,
     )]
     pub vault: Account<'info, TokenAccount>,
 
     #[account(
         mut,
-        seeds = [b"obligation", user.key().as_ref()],
-        bump,
-        // FIX: Use constraint instead of has_one for owner check
-        constraint = obligation.owner == user.key() @ ErrorCode::Unauthorized
+        constraint = obligation.owner == user.key() @ crate::error::ErrorCode::Unauthorized
     )]
-    pub obligation: Account<'info, UserObligation>,
+    pub obligation: Account<'info, crate::state::UserObligation>,
 
     pub mint: Account<'info, Mint>,
     pub token_program: Program<'info, Token>,
@@ -37,21 +33,24 @@ pub struct Borrow<'info> {
 pub fn handler(ctx: Context<Borrow>, amount: u64) -> Result<()> {
     let obligation = &ctx.accounts.obligation;
 
-    // RULE: Health Factor Calculation (Gemini HFT Rule)
+    // Health Factor Calculation (80% collateral rule)
     let max_borrow = (obligation.deposited as u128)
-        .checked_mul(80).unwrap()
-        .checked_div(100).unwrap() as u64;
+        .checked_mul(80)
+        .unwrap()
+        .checked_div(100)
+        .unwrap() as u64;
 
-    if amount > max_borrow {
-        return Err(error!(ErrorCode::InsufficientCollateral));
+    let total_borrowable = max_borrow.saturating_sub(obligation.borrowed);
+
+    if amount > total_borrowable {
+        return Err(error!(crate::error::ErrorCode::InsufficientCollateral));
     }
 
-    // PDA Signing Rule - include mint in seeds
-    let seeds = &[
-        b"pool_vault",
-        ctx.accounts.mint.key().as_ref(),
-        &[ctx.bumps.vault]
-    ];
+    // Store mint key to avoid temporary value
+    let mint_key = ctx.accounts.mint.key();
+
+    // PDA signing for vault transfer
+    let seeds = &[b"pool_vault", mint_key.as_ref(), &[ctx.bumps.vault]];
     let signer = &[&seeds[..]];
 
     let cpi_ctx = CpiContext::new_with_signer(
@@ -61,22 +60,14 @@ pub fn handler(ctx: Context<Borrow>, amount: u64) -> Result<()> {
             to: ctx.accounts.user_token_account.to_account_info(),
             authority: ctx.accounts.vault.to_account_info(),
         },
-        signer,
+        signer
     );
 
     token::transfer(cpi_ctx, amount)?;
-    
+
     ctx.accounts.obligation.borrowed = ctx.accounts.obligation.borrowed
         .checked_add(amount)
         .unwrap();
-    
-    Ok(())
-}
 
-#[error_code]
-pub enum ErrorCode {
-    #[msg("Insufficient collateral")]
-    InsufficientCollateral,
-    #[msg("Unauthorized")]
-    Unauthorized,
+    Ok(())
 }

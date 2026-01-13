@@ -9,7 +9,3 @@ codegen-units = 1
 
 [profile.release.build-override]
 opt-level = 3
-
-# ADD THIS SECTION TO PIN THE DEPENDENCY VERSION
-[patch.crates-io]
-constant_time_eq = { version = "=0.3.1" }  # Use the old version compatible with Rust 2021
