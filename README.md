@@ -99,5 +99,4 @@ Key Milestones:
 ### Week 20: Complete Portfolio Project
 
 ### Week 26: Job Offer Target
-### Web-dev
 
