@@ -1,4 +1,3 @@
-
 use std::fs;
 use std::process;
  
@@ -25,16 +24,27 @@ This is the improved version that includes structs
 pub struct Config{
     pub  query: String,
     pub file_path: String,
+    pub ignore_case: bool,
 }
 
 impl Config{
-    pub fn build(args:&[String])-> Result<Config, &'static str>{
-        if args.len()<3{
-            return Err("not enough arguments");
-        }
-        let query=args[1].clone();
-          let file_path=args[2].clone();
-    Ok(Config{query, file_path})
+    pub fn build(mut args:impl Iterator<Item=String>)-> Result<Config, &'static str>{
+        
+
+        args.next();
+        let query=match args.next(){
+            Some(arg)=>arg,
+            None=>return Err("did not get a query string"),    
+        }; 
+        let file_path=match args.next(){
+            Some(arg)=>arg,
+            None=>return Err("did not get a file path"),    
+        };
+        let ignore_case=std::env::var("IGNORE_CASE").is_ok();
+        
+      
+        
+        Ok(Config{query, file_path, ignore_case})
     }
 }
 
@@ -45,13 +55,16 @@ impl Config{
 // }
 
 fn search<'a>(query: &str, content: &'a str)-> Vec<&'a str>{
-    let mut results=Vec::new();
-    for line in content.lines(){
-        if line.contains(query){
-            results.push(line);
-        }
-    }
-    results
+    // let mut results=Vec::new();
+    // for line in content.lines(){
+    //     if line.contains(query){
+    //         results.push(line);
+    //     }
+    // }
+    // results
+    content.lines().filter(|line| line.contains(query)).collect()
+
+
 }
 
 #[cfg(test)]

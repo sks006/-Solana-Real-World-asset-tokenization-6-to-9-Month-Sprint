@@ -2,3 +2,6 @@
 2 | [TODO] | Implement the parse_config function
 3 | [TODO] | Master the Rust Result type
 4 | [TODO] | Handle file not found errors
+
+I want to master the Rust Solana technology
+now we have to follow the Result if there is will the there is way.

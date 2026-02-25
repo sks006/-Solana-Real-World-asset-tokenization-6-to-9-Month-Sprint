@@ -3,9 +3,10 @@ use std::process;
 use cli_error_handling::Config;
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
-    //parse because we want to handle the error if there are not enough arguments
-    let config = Config::build(&args).expect("could not parse config");
+    // let args: Vec<String> = env::args().collect();
+    // //parse because we want to handle the error if there are not enough arguments
+    // let config = Config::build(&args).expect("could not parse config");
+    
 
 
 
