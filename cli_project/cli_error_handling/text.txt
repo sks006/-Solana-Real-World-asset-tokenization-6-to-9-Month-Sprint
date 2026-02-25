@@ -1,0 +1,4 @@
+1 | [DONE] | Design the system architecture
+2 | [TODO] | Implement the parse_config function
+3 | [TODO] | Master the Rust Result type
+4 | [TODO] | Handle file not found errors
